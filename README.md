@@ -16,12 +16,18 @@ Routines to advance the solution of a system of first-order ODEs by one step
 Routines to integrate orbits and compute energies for two particles interacting 
 via an attractive 1/r potential
 
+* `Shields_AST304_Project`
+Uses kepler.py and ode.py to graph and analyize the orbits of two particles interacting
+via an attractive 1/r potential
+
 Report/closeout
 ---------------
 
-1.  Modify this README file by replacing instructions from me with your  instructions on how to run the code.
-2. Inform Wasundara and I when you are ready to have your code reviewed.
-3. Write your report in a concise, professional manner and upload a pdf of your report with your submission to D2L.
+To run my code, you must first import the modules to obtain important intialization and integration functions.
+Next, you must intialize your system with the `set_initial_conditions` function. From there, you can use the 
+`integrate_orbit` function to solve the ODE and obtain the orbit and energies of the system. It is also important 
+to take advantage of the 3 different methods (forward euler, 2nd Order Runge-Kutta, and 4th order Runge-Kutta)
+available in `intergrate_orbit`. Finally, simply plot the solution.
    
 Resources
 ---------
