@@ -17,7 +17,7 @@ Routines to integrate orbits and compute energies for two particles interacting
 via an attractive 1/r potential
 
 * `Shields_AST304_Project.ipynb`
-Uses kepler.py and ode.py to graph and analyize the orbits of two particles interacting
+Uses kepler.py and ode.py to graph and analyze the orbits of two particles interacting
 via an attractive 1/r potential
 
 Report/closeout
