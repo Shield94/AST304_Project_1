@@ -82,10 +82,11 @@ def derivs(t,z,m):
     v = z[2:4]
     # 2. compute the norm of position vector, and use it to compute the force
     rabs = norm(r)
+    force = -(m**2/rabs**3)*r
     # 3. compute drdt (array [dx/dt, dy/dt])
     drdt = v
     # 4. compute dvdt (array [dvx/dt, dvy/dt])
-    dvdt = -(m/rabs**3)*r
+    dvdt = force/m
 
     # join the arrays
     dzdt = np.concatenate((drdt,dvdt))
